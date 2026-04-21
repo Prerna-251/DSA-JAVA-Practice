@@ -1,5 +1,7 @@
 package sorting;
 
+import java.util.Scanner;
+
 public class Bubble_sort {
 	
 	 public static void bubbleSort(int[] arr) {
@@ -23,7 +25,13 @@ public class Bubble_sort {
 	    }
 
 	public static void main(String[] args) {
-		 int[] arr = {5, 2, 9, 1};
+		 Scanner sc = new Scanner(System.in);
+		 int a = sc.nextInt();
+		 int arr[] = new int[a];
+		 
+		 for(int i=0; i<a; i++) {
+			 arr[i] = sc.nextInt();
+		 }
 	        bubbleSort(arr);
 
 	        for (int num : arr) {
