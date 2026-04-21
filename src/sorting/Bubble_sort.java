@@ -4,8 +4,15 @@ import java.util.Scanner;
 
 public class Bubble_sort {
 	
-	 public static void bubbleSort(int[] arr) {
-	        int n = arr.length;
+	public static void main(String[] args) {
+		 Scanner sc = new Scanner(System.in);
+		 int a = sc.nextInt();
+		 int arr[] = new int[a];
+		 
+		 for(int i=0; i<a; i++) {
+			 arr[i] = sc.nextInt();
+		 }
+		 int n = arr.length;
 
 	        for (int i = 0; i < n - 1; i++) {
 	            boolean swapped = false;
@@ -22,17 +29,6 @@ public class Bubble_sort {
 
 	            if (!swapped) break;
 	        }
-	    }
-
-	public static void main(String[] args) {
-		 Scanner sc = new Scanner(System.in);
-		 int a = sc.nextInt();
-		 int arr[] = new int[a];
-		 
-		 for(int i=0; i<a; i++) {
-			 arr[i] = sc.nextInt();
-		 }
-	        bubbleSort(arr);
 
 	        for (int num : arr) {
 	            System.out.print(num + " ");
